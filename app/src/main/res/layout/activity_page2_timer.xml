@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimerFunc.Page2TimerAct"
+    android:orientation="vertical"
+    android:background="@drawable/gradient3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:paddingTop="0dp">
+
+
+        <Button
+
+            android:id="@+id/startService"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Start Service"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/white"
+
+            android:backgroundTint="#820357"/>
+        <Button
+
+            android:id="@+id/stopService"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Stop Service"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startService"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/white"
+            android:backgroundTint="#820357"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id='@+id/recycler_view'
+        android:layout_width="match_parent"
+
+        android:layout_height="620dp"
+        app:layout_constraintTop_toBottomOf="@+id/stopService" />
+
+
+</LinearLayout>

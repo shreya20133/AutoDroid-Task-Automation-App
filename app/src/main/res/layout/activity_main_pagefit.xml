@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/myappstyle"
+    android:background="@drawable/gradient3"
+      tools:context=".AqiMonitor">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/feature_appbar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:titleEnabled="true"
+            app:title="Step Counter"
+            android:id="@+id/c_t_torch">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|center_horizontal"
+                android:src="@drawable/tool_bck"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/step_icn"
+                android:scaleType="centerCrop"
+                android:layout_margin="16dp"
+                app:layout_collapseMode="parallax"
+                android:contentDescription="icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Complete your daily\n goal of 2000 steps.\nKnow your step count daily in real time and stay fit!"
+                android:textSize="18sp"
+                android:layout_margin="16dp"
+                android:padding="10dp"
+                android:gravity="start"
+                android:layout_gravity="top" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepCounterFit.MainPagefit"
+    android:background="@drawable/gradient3"
+    android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/bluetoothAppBar"
+                android:background="#b54284">
+                <TextView
+                    android:id="@+id/tvSwitchBluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ON"
+                    android:textSize="18sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignStart="@id/startStep"
+                    android:textStyle="bold"
+                    android:layout_alignLeft="@id/startStep"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="12dp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/startStep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:theme="@style/SwitchCompatTheme2"
+                    android:layout_margin="12dp"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="16dp">
+
+
+        <LinearLayout
+            android:id="@+id/llgoal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dayRecordText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="#820357"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:text="Today's Goal : 2000 "
+                android:autoSizeMaxTextSize="30dp"
+                android:autoSizeMinTextSize="2sp"
+                android:autoSizeTextType="uniform"
+                android:textSize="22sp" />
+
+
+
+            <Button
+                android:id="@+id/setgoal"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#5E0640"
+                android:text="Set Goal"
+                android:textSize="20dp"
+                android:autoSizeMaxTextSize="30dp"
+                android:autoSizeMinTextSize="2sp"
+                android:autoSizeTextType="uniform"
+                android:visibility="gone"
+                android:padding="5dp"
+                android:maxLines="1"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/stepLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llgoal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:text="Steps taken"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/stcnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stepLabel"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            tools:text="0"
+            android:textColor="@color/black"
+
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/accuracy_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/stcnt"
+            android:textColor="@color/black"
+
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text=""
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accuracy_alert"
+            android:layout_marginTop="70dp"
+            android:text="Time: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/stdist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeText"
+            android:layout_marginTop="10dp"
+            android:text="Distance: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"/>
+
+
+        <TextView
+            android:id="@+id/speedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stdist"
+            android:layout_marginTop="10dp"
+            android:text="Average speed: "
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="myappstyle" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#820357</item>
+    <item name="colorPrimaryDark">#820357</item>
+    <item name="colorAccent">#670044</item>
+    <item name="textStartPadding">70dp</item>
+    <item name="android:textColorPrimary">@color/white</item>
+    <item name="android:textColor">@color/white</item>
+</style>
+</resources>

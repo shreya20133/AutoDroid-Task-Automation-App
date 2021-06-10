@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            tools:context=".LoginActivity"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/ic_wave__9_"
+            android:layout_height="320dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/welcome"
+                android:fontFamily="@font/days_one"
+                android:textColor="#820357"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="1dp"
+                android:text="@string/create_your_account_or_log_in"
+                android:textColor="#820357"
+                android:fontFamily="@font/days_one"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:layout_marginLeft="8dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_iconfinder_icon__5_"
+                tools:layout_editor_absoluteX="121dp"
+                tools:layout_editor_absoluteY="115dp"
+                android:contentDescription="@string/userimage" />
+
+        </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="16dp"
+                android:layout_margin="16dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="8dp"
+                        android:background="@null"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginTop="40dp"
+                        android:alpha="0.5"
+                        app:cardCornerRadius="12dp"
+                        tools:ignore="UnusedAttribute">
+
+                        <EditText
+                            android:id="@+id/editTextUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:background="@null"
+                            android:inputType="textEmailAddress"
+                            android:textIsSelectable="true"
+                            android:fontFamily="@font/days_one"
+                            android:padding="8dp"
+                            android:hint="@string/enter_username"
+                            android:autofillHints="true" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="365dp"
+                        android:alpha="0.5"
+                        android:elevation="8dp"
+                        android:background="@android:color/transparent"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginTop="26dp"
+                        app:cardCornerRadius="12dp">
+
+                        <EditText
+                            android:id="@+id/editTextPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:background="@android:color/transparent"
+                            android:textAlignment="textStart"
+                            android:textIsSelectable="true"
+                            android:padding="8dp"
+                            android:fontFamily="@font/days_one"
+                            android:inputType="textPassword"
+                            android:hint="@string/enter_password"
+                            android:autofillHints="true"
+                            android:gravity="start" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv_ForgotPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/forgot_password"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_marginEnd="20dp"
+                        android:layout_gravity="end"
+                        android:textColor="#090CB6"
+                        android:layout_marginRight="20dp" />
+
+                    <Button
+                        android:id="@+id/loginBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginEnd="18dp"
+                        android:backgroundTint="#FFCEEE"
+                        android:focusable="true"
+                        android:fontFamily="@font/days_one"
+                        android:padding="12dp"
+                        android:text="@string/log_in"
+                        android:textAllCaps="false"
+                        android:textColor="#680346"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/or"
+                        android:textColor="#E696CB"
+                        android:fontFamily="@font/days_one"
+                        android:textSize="16sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/googleSignIn"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:elevation="8dp"
+                        android:alpha="0.8"
+                        app:cardCornerRadius="12dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginTop="26dp"
+                        android:backgroundTint="#FFCEEE"
+                        android:layout_marginBottom="22dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="48dp"
+                                android:layout_marginLeft="48dp"
+                                android:contentDescription="@string/google_logo"
+                                android:padding="5dp"
+                                android:src="@drawable/googleicon" />
+
+                            <TextView
+                                android:id="@+id/googleSignInBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginLeft="18dp"
+                                android:fontFamily="@font/days_one"
+                                android:text="@string/log_in_with_google"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="#680346"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/signupView"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:elevation="8dp"
+                        android:alpha="0.8"
+                        app:cardCornerRadius="12dp"
+                        android:layout_marginStart="18dp"
+                        android:backgroundTint="#FFCEEE"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="26dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:id="@+id/NoAccountTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginLeft="18dp"
+                                android:fontFamily="@font/days_one"
+                                android:text="@string/don_t_have_an_account"
+                                android:textAllCaps="false"
+                                android:textColor="#680346"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/SignUpTv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginLeft="18dp"
+                                android:background="?attr/selectableItemBackground"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:fontFamily="@font/days_one"
+                                android:text="@string/sign_up"
+                                android:textColor="#090CB6"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
+

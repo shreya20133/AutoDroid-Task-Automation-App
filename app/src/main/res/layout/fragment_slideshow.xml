@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/myappstyle"
+    android:background="@drawable/gradient3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#820357">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About AUTODROID"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:layout_margin="12dp"
+            android:padding="12dp"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_iconfinder_icon__5_"
+            android:scaleType="centerCrop"
+            android:layout_margin="12dp"
+            android:padding="6dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:layout_collapseMode="parallax"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/gradient5">
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                android:id="@+id/ani_abt"
+                app:lottie_loop="true"
+                android:layout_below="@id/ani_abt"
+                app:lottie_rawRes="@raw/loginanimation"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ani_abt"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="18dp"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#820357"
+                    android:background="#FFF1F6"
+                    android:layout_below="@id/ani_abt"
+                    android:padding="6dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="We are inspired by the fact that smartphones are called smart for a reason.
+It is tiresome to perform monotonous routine tasks on a daily basis. We try to help the user get rid of this
+feeling through automation.\n\nThe user need not juggle through several apps and can play by his own rules.AUTODROID promises to deliver a smooth user experience.\n\n
+There exist multiple apps for various activities but sometimes the user requires to work hand in hand between
+two or more apps together. We provide the user to utilize such functionalities automatically and much more.Some automations are general in use, while some are better when personalized.\n">
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+</LinearLayout>

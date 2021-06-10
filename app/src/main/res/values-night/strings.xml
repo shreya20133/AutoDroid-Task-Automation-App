@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sms_wisher">Sms Wisher</string>
+    <string name="select_date_to_send_message">Sellect date to send message</string>
+    <string name="pllease_type_your_message">Pllease type your message</string>
+    <string name="auto_sms_wisher">Auto SMS Wisher</string>
+    <string name="auto_app_timer">Auto APP Timer</string>
+    <string name="my_macros">My Macros</string>
+    <string name="trending">Trending</string>
+</resources>

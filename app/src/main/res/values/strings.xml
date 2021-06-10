@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">AUTODROID</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">AUTODROID</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="hazardous">Hazardous</string>
+    <string name="unhealthy">Unhealthy</string>
+    <string name="good">Good</string>
+    <string name="moderate">Moderate</string>
+    <string name="very_unhealthy">Very Unhealthy</string>
+    <string name="unhealhy_for_sensitive_groups">Unhealthy for sensitive groups</string>
+    <string name="title_activity_nearest">NearestActivity</string>
+    <string name="mapbox_key">sk.eyJ1IjoiY2FwdGVuMTAxIiwiYSI6ImNrNGZ0MjhmbjBwbjQza2xodDZldDVvbmMifQ.GH_y3mEI-BC9gcnj0mHQSw</string>
+    <string name="title_activity_maps">AQI Map</string>
+    <string name="title_activity_nearest_aqimaps">Nearest Map</string>
+    <string name="title_activity_aqimap">Map</string>
+    <string name="title_activity_specific_city_map">Map</string>
+    <string name="Clear_Sky_Day">Clear Sky(day)</string>
+    <string name="Clear_Sky_night">Clear Sky(night)</string>
+    <string name="Few_Clouds_day">Few Clouds(day)</string>
+    <string name="Few_Couds_night">Few Couds(night)</string>
+    <string name="Scattered_Clouds_day_time">Scattered Clouds (day time)</string>
+    <string name="Scattered_Clouds_night_time">Scattered Clouds (night time)</string>
+    <string name="Broken_Clouds_day_time">Broken Clouds (day time)</string>
+    <string name="Broken_Clouds_night_time">Broken Clouds (night time)</string>
+    <string name="Shower_Rain_day_time">Shower Rain (day time)</string>
+    <string name="Shower_Rain_night_time">Shower Rain (night time)</string>
+    <string name="Rain_day_time">Rain (day time)</string>
+    <string name="Rain_night_time">Rain (night time)</string>
+    <string name="Thunderstorm_day_time">Thunderstorm (day time)</string>
+    <string name="Thunderstorm_night_time">Thunderstorm (night time)</string>
+    <string name="Snow_day_time">Snow (day time)</string>
+    <string name="Snow_night_time">Snow (night time)</string>
+    <string name="Mist_night_time">Mist(night time)</string>
+    <string name="Mist_day_time">Mist(day time)</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="userimage">UserImage</string>
+    <string name="login">Login</string>
+    <string name="home_activity">Home Activity</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="welcome">Welcome</string>
+    <string name="create_your_account_or_log_in">Create your account or Log in</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="log_in">Log in</string>
+    <string name="or">OR</string>
+    <string name="google_logo">google logo</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in_with_google">Log in with Google</string>
+
+    <string name="drive_upload_feature">"Allows the app to automaticaly upload previous day photos from Gallery to Google Drive inside the "My_Photos_Folder" everyday"</string>
+
+
+    <string name="save_button">Save</string>
+    <string name="prompt_occasion">Select Occasion</string>
+    <string name="enter_10_digit_mobile_no">Enter 10 digit mobile No</string>
+    <string name="title_activity_timer">TimerActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="sms_wisher">Auto SMS Wisher</string>
+    <string name="select_date_to_send_message">Select date to send message</string>
+    <string name="please_type_your_message">Please type your message</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="auto_sms_wisher">Auto SMS Wisher</string>
+    <string name="auto_app_timer">Auto APP Timer</string>
+    <string name="my_macros">My Macros</string>
+    <string name="trending">Trending</string>
+    <string name="lockfinal">lockfinal</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+</resources>
